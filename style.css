@@ -1,0 +1,90 @@
+body {
+    font-family: 'Georgia', serif; /* Letra más clásica y poética */
+    background-color: #87CEFA; /* Celeste claro */
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.slide {
+    display: none;
+    padding: 20px;
+}
+
+.active {
+    display: block;
+}
+
+.button-container {
+    margin: 20px 0;
+}
+
+.slide img {
+    max-width: 50%; /* Tamaño reducido al 50% */
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Estilos del corazón en el primer slide */
+.heart {
+    width: 100px;
+    height: 90px;
+    background-color: red;
+    position: relative;
+    margin: 100px auto;
+    transform: rotate(-45deg);
+}
+
+.heart:before,
+.heart:after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.heart:before {
+    top: -50px;
+    left: 0;
+}
+
+.heart:after {
+    left: 50px;
+    top: 0;
+}
+
+.heart p {
+    transform: rotate(45deg);
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* Estilo del mensaje importante */
+.important-instruction {
+    font-size: 16px;
+    color: #444;
+    margin-top: 20px;
+}
+
+/* Estilo poético para el texto */
+.poetic-text {
+    font-family: 'Cursive', serif;
+    font-size: 24px;
+    line-height: 1.6;
+    margin-top: 20px;
+    color: #444;
+}
+
+/* Estilo para el botón de interacción */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
